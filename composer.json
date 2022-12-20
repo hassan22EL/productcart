@@ -1,13 +1,15 @@
 {
     "name": "heesapp/product-cart",
-    "description": "Cart Proudect opreation",
+    "description": "Product Cart Operation",
     "type": "library",
-    "require": {},
+    "require": {
+
+    },
     "license": "MIT",
     "authors": [
         {
             "name": "Hassan Elsaied",
-            "email": "hassanelsaied80@gmail.com"
+            "email": "hassanelsaied796@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -19,7 +21,7 @@
             "Heesapp\\Productcart\\": "src/"
         },
         "files": [
-               "src/helpers.php"
+            "src/helpers.php"
         ]
     },
 
