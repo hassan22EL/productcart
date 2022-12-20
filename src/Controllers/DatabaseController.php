@@ -202,7 +202,7 @@ class DatabaseController implements ProductCartContract {
         }
 
 
-        if ($CartDate['user_id'] != null && Auth::guard(config('productcart.guard_name'))->check()) {
+        if (isset($CartDate['user_id']) && $CartDate['user_id'] == null && Auth::guard(config('productcart.guard_name'))->check()) {
             $this->associateUser();
         }
 
