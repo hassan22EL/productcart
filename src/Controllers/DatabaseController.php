@@ -409,8 +409,7 @@ class DatabaseController implements ProductCartContract {
                     ->where('cookie', $this->getCookieElement())
                     ->first();
         }
-
-        if ($WitchListData['user_id'] == null && Auth::guard(config('productcart.guard_name'))->check()) {
+        if (isset($WitchListData['user_id']) && $WitchListData['user_id'] == null && Auth::guard(config('productcart.guard_name'))->check()){
             $this->associateWUser();
         }
 
